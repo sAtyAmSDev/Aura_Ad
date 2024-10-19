@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ======================navbar============================= */
+
+.navbar {
+  color: black;
+  padding: 1pc 2pc;
+  display: flex;
+  align-items: center;
+  background: white;
+}
+.navbar .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .container .Logo {
+  width: 7vw;
+}
+.navbar .container .navbarUL {
+  gap: 1.5rem;
+  display: flex;
+  list-style: none;
+}
+.navbar .container .navbarUL .nav-item {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.navbar .container .navbarUL .nav-item .NavActive {
+  border-bottom: 2px solid #235fff;
+}
+.navbar .container .navbarUL .nav-item a {
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  cursor: pointer;
+}
+.navbar .container .NavBtn {
+  font-weight: bold;
+  gap: 5px;
+  font-size: medium;
+  display: flex;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px 20px;
+  background: #235fff;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .container .NavBtn span {
+  font-weight: normal;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ======================Footer============================= */
+
+.Footer {
+  border-radius: 2pc 2pc 0pc 0pc;
+  color: white;
+  display: flex;
+  padding: 4pc 4pc 2pc 4pc;
+  margin-top: 5pc;
+
+  background: black;
+  flex-direction: column;
+  gap: 1pc;
+}
+.Footer .Text {
+  border-bottom: 1px solid gray;
+  padding-bottom: 2pc;
+  display: flex;
+  justify-content: space-between;
+}
+.Footer .Text ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1pc;
+}
+
+.Footer .Text ul h1 {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.Footer .Text ul h1 img {
+  width: 3pc;
+}
+.Footer .Text ul li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.Footer .Text ul li a {
+  text-decoration: none;
+  color: gray;
+}
+.Footer .Text ul li i {
+  padding: 7px;
+  display: flex;
+  background: #1a1a1a;
+  cursor: pointer;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.Footer .Text ul li i svg {
+  font-size: 16px;
+  color: #ebd163;
+}
+
+.Footer .Text ul li .text {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.Footer .Text ul li .text p {
+}
+.Footer .Text ul li .text a {
+  text-decoration: none;
+}
+.Footer .Text ul .News {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Footer .Text ul .News .date {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.Footer .Text ul .News .date svg {
+  font-size: 16px;
+  color: #ebd163;
+}
+.Footer .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.Footer .bottom .aside {
+}
+.Footer .bottom .aside p {
+}
+.Footer .bottom ul {
+  list-style: none;
+  display: flex;
+  gap: 2pc;
+  color: white;
+}
+.Footer .bottom ul li {
+}
+.Footer .bottom ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}

@@ -1,0 +1,15 @@
+.PagesHeroSection {
+    display: flex;
+    background: black;
+    height: 80vh;
+    border-radius: 0pc 0pc 20pc 3pc;
+    justify-content: center;
+    align-items: center;
+  }
+  .PagesHeroSection h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0pc 18pc;
+  }
+  
