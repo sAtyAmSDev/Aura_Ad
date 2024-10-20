@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  color: black;
+  width: 100%;
+  height: 100vh;
+}
+
+.MainSection {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2pc;
+  background-color: #efefef8c;
+  margin: 0pc 4pc 4pc 4pc;
+}
+.MainSection .HeroSection {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 3pc;
+  background-color: #1a1a1a;
+  width: 100%;
+  border-radius: 15px;
+}
+.MainSection .HeroSection .HeroText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2pc;
+}
+.MainSection .HeroSection .HeroText .Title {
+  font-size: 3rem;
+}
+.MainSection .HeroSection .HeroText .Title .TitleMid {
+  text-decoration: underline;
+  font-family: "Qwitcher Grypen", cursive;
+  color: #2aaf74;
+}
+.MainSection .HeroSection .HeroText p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.MainSection .HeroSection .HeroText .TitleClients {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+.MainSection .HeroSection .HeroText .TitleP {
+  padding-right: 6pc;
+}
+.MainSection .HeroSection .HeroText .HeroBtn {
+  font-weight: bold;
+  gap: 5px;
+  font-size: medium;
+  display: flex;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  background: #235fff;
+  justify-content: center;
+  align-items: center;
+}
+.MainSection .HeroSection .HeroText .HeroBtn span {
+  font-weight: normal;
+  font-family: initial, sans-serif;
+}
+
+.MainSection .HeroSection .HeroImg {
+  display: flex;
+  width: 50%;
+  align-items: flex-start;
+  justify-content: center;
+}
+.MainSection .HeroSection .HeroImg img {
+  width: 25vw;
+}
+.MainSection .HeroSection .HeroImg .HelplineCard {
+  overflow: hidden;
+  display: flex;
+  border-radius: 20px 0;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.HelplineCardBox {
+  /* width: 60%; */
+  display: flex;
+}
+.MainSection .HeroSection .HeroImg .HelplineCard .HelplineCardText {
+  padding: 2.5pc 4pc;
+  background-color: #2aaf74;
+  display: flex;
+  align-items: center;
+  gap: 1pc;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+}
+.MainSection
+  .HeroSection
+  .HeroImg
+  .HelplineCard
+  .HelplineCardBox
+  .HelplineCardText {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: flex;
+}
+.MainSection
+  .HeroSection
+  .HeroImg
+  .HelplineCard
+  .HelplineCardBox
+  .HelplineCardText.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.MainSection
+  .HeroSection
+  .HeroImg
+  .HelplineCard
+  .HelplineCardBox
+  .HelplineCardText.inactive {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.MainSection .HeroSection .HeroImg .HelplineCard .HelplineCardText .textIcon {
+  display: flex;
+  font-size: 25px;
+  padding: 17px;
+  color: #000;
+  border-radius: 50%;
+  border: 0.5px solid black;
+}
+.MainSection
+  .HeroSection
+  .HeroImg
+  .HelplineCard
+  .HelplineCardText
+  .HelplineTextBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1pc;
+  font-size: 20px;
+}
+.MainSection .HeroSection .HeroImg .HelplineCard .HelplineCardIcon {
+  background: black;
+  display: flex;
+  gap: 25px;
+  padding: 2pc 2pc;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.MainSection .HeroSection .HeroImg .HelplineCard .HelplineCardIcon button {
+  background: transparent;
+}
+.MainSection
+  .HeroSection
+  .HeroImg
+  .HelplineCard
+  .HelplineCardIcon
+  .ForwardIcon {
+  cursor: pointer;
+  color: #525f52c0;
+  display: flex;
+  border: 1px solid #525f52c0;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.MainSection
+  .HeroSection
+  .HeroImg
+  .HelplineCard
+  .HelplineCardIcon
+  .ForwardIcon:hover {
+  color: #2aaf74;
+}
+.MainSection
+  .HeroSection
+  .HeroImg
+  .HelplineCard
+  .HelplineCardIcon
+  .ForwardIcon
+  svg {
+  font-size: 30px;
+  margin: 16px;
+}
+.MainSection
+  .HeroSection
+  .HeroImg
+  .HelplineCard
+  .HelplineCardIcon
+  .BackwardIcon {
+  cursor: pointer;
+  color: #00ff008c;
+  display: flex;
+  border: 1px solid #2aaf74;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.MainSection
+  .HeroSection
+  .HeroImg
+  .HelplineCard
+  .HelplineCardIcon
+  .BackwardIcon:hover {
+  color: #525f52c0;
+}
+.MainSection
+  .HeroSection
+  .HeroImg
+  .HelplineCard
+  .HelplineCardIcon
+  .BackwardIcon
+  svg {
+  font-size: 30px;
+  margin: 16px;
+}
+.MainSection .PartnerBrand {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1pc;
+  padding-bottom: 2pc;
+}
+.MainSection .PartnerBrand span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.MainSection .PartnerBrand .brand {
+  display: flex;
+  gap: 2pc;
+}
+.MainSection .PartnerBrand .brand img {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 874px) {
+  .MainSection {
+    margin: 0pc 2pc 2pc 2pc;
+  }
+
+  .MainSection .HeroSection {
+    flex-direction: column;
+    padding: 1pc;
+    gap: 2pc;
+  }
+  .MainSection .HeroSection .HeroText {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .MainSection .HeroSection .HeroText .TitleP {
+    padding-right: 0pc;
+    text-align: center;
+  }
+  .MainSection .HeroSection .HeroText .Title {
+    text-align: center;
+  }
+  .MainSection .HeroSection .HeroImg img {
+    top: 21px;
+    opacity: 0.1;
+    width: 40vw;
+    position: absolute;
+  }
+  .MainSection .HeroSection .HeroImg .HelplineCard {
+    overflow: visible;
+    position: relative;
+  }
+  .MainSection .HeroSection .HeroImg .HelplineCard .HelplineCardText {
+    width: 20pc;
+    padding: 2pc 3pc;
+  }
+  .MainSection .PartnerBrand .brand img {
+    width: 5pc;
+  }
+}

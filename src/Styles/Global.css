@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ======================navbar============================= */
+.navbar {
+  color: black;
+  padding: 20px 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar .container .Logo {
+  width: 120px;
+}
+
+.navbarUL {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.navbarUL.NavActive {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar .nav-item {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.navbar .nav-link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.navbar .nav-link:hover {
+  color: #235fff;
+}
+
+.NavBtn {
+  font-weight: bold;
+  gap: 5px;
+  display: flex;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px 20px;
+  background: #235fff;
+  align-items: center;
+}
+
+.NavBtnMobile {
+  font-weight: bold;
+  gap: 5px;
+  display: none;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px 20px;
+  background: #235fff;
+  align-items: center;
+}
+
+.NavIcon {
+  display: none;
+  cursor: pointer;
+}
+
+/* ======================Footer============================= */
+
+.Footer {
+  border-radius: 2pc 2pc 0pc 0pc;
+  color: white;
+  display: flex;
+  padding: 4pc 4pc 2pc 4pc;
+  margin-top: 5pc;
+
+  background: black;
+  flex-direction: column;
+  gap: 1pc;
+}
+.Footer .Text {
+  border-bottom: 1px solid gray;
+  padding-bottom: 2pc;
+  display: flex;
+  justify-content: space-between;
+}
+.Footer .Text ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1pc;
+}
+
+.Footer .Text ul h1 {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.Footer .Text ul h1 img {
+  width: 3pc;
+}
+.Footer .Text ul li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.Footer .Text ul li a {
+  text-decoration: none;
+  color: gray;
+}
+.Footer .Text ul li i {
+  padding: 7px;
+  display: flex;
+  background: #1a1a1a;
+  cursor: pointer;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.Footer .Text ul li i svg {
+  font-size: 16px;
+  color: #ebd163;
+}
+
+.Footer .Text ul li .text {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.Footer .Text ul li .text p {
+}
+.Footer .Text ul li .text a {
+  text-decoration: none;
+}
+.Footer .Text ul .News {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Footer .Text ul .News .date {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.Footer .Text ul .News .date svg {
+  font-size: 16px;
+  color: #ebd163;
+}
+.Footer .Text ul .News h1 {
+  font-size: 1.1rem;
+}
+.Footer .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.Footer .bottom .aside {
+}
+.Footer .bottom .aside p {
+}
+.Footer .bottom ul {
+  list-style: none;
+  display: flex;
+  gap: 2pc;
+  color: white;
+}
+.Footer .bottom ul li {
+}
+.Footer .bottom ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 1028px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar .container .Logo {
+    width: 90px;
+  }
+
+  .navbar .container .navbarUL .nav-link {
+    font-size: 14px;
+  }
+
+  .navbar .container .NavBtn {
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 955px) {
+  .Footer {
+    padding: 2pc;
+    margin-top: 3pc;
+  }
+  .Footer .Text ul h1 {
+    font-size: 1rem;
+  }
+  .Footer .Text ul li .text p {
+    font-size: 13px;
+  }
+  .Footer .Text ul li .text a {
+    font-size: 13px;
+  }
+  .Footer .Text ul li a {
+    font-size: 13px;
+  }
+  .Footer .Text ul .News .date {
+    font-size: 12px;
+  }
+  .Footer .Text ul .News h1 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 806px) {
+  .navbar .container .navbarUL {
+    display: none;
+  }
+  .navbar .container .navbarUL.NavActive {
+    top: 51px;
+
+    opacity: 0.9;
+    border-radius: 21px;
+    width: 18pc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .container .navbarUL .nav-item a {
+    font-size: 20px;
+  }
+  .NavIcon {
+    display: block;
+  }
+  .navbar .container .NavBtn {
+    display: none;
+  }
+  .NavBtnMobile {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar .container .Logo {
+    width: 55px;
+  }
+  .Footer {
+    padding: 2pc 1pc;
+  }
+  .Footer .Text ul h1 {
+    font-size: 1.5rem;
+  }
+  .Footer .Text ul li .text p {
+    font-size: 15px;
+  }
+  .Footer .Text ul li .text a {
+    font-size: 14px;
+  }
+  .Footer .Text ul .News h1 {
+    font-size: 12px;
+  }
+  .Footer .Text ul {
+    width: 29%;
+    align-items: center;
+  }
+  .Footer .Text {
+    gap: 2pc;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Footer .bottom .aside p {
+    font-size: 11px;
+  }
+  .Footer .bottom ul li a {
+    font-size: 14px;
+  }
+}
